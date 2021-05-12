@@ -1,1 +1,4 @@
-type Absolute<T extends number | string | bigint> = any
+
+type Absolute<T extends number | string | bigint> = T extends `${infer First}${infer Rest}` ?
+  First extends '-' ?
+  Rest : T : Absolute<`${T}`>

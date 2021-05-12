@@ -17,7 +17,6 @@ type Baz = {
   baz: string
 }
 
-
 type cases = [
   Expect<Equal< RemoveIndexSignature<Foo>, { foo(): void }>>,
   Expect<Equal< RemoveIndexSignature<Bar>, { bar(): void }>>,

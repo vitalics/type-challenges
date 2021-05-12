@@ -36,7 +36,6 @@ type testExpect3 = {
   sun: false
   isMotherRussia: false | undefined
 }
-
 type cases = [
   Expect<Equal<AppendToObject<test1, 'home', boolean>, testExpect1>>,
   Expect<Equal<AppendToObject<test2, 'home', 1>, testExpect2>>,

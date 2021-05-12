@@ -1,5 +1,4 @@
 import { Equal, Expect } from '@type-challenges/utils'
-
 type cases = [
   Expect<Equal<Concat<[], []>, []>>,
   Expect<Equal<Concat<[], [1]>, [1]>>,
